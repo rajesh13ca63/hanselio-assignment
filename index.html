@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+
+
+<body> 
+ 
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <label for="message" id="alertmsg"></label>
+        </div>
+        <div class="col-md-6" >
+            <label for="label" id="label" style="float: right">Lavel : 1</label>
+        </div>
+    </div>
+      
+    <div class="row">
+        <div class="col-md-2 square square-red" id="0" onclick="gameScore(0)">
+
+        </div>
+        <div class="col-md-2 square square-green" id="1" onclick="gameScore(1)">
+
+        </div>
+        <div class="col-md-2 square square-blue" id="2" onclick="gameScore(2)">
+
+        </div>
+        <div class="col-md-2 square square-yellow" id="3" onclick="gameScore(3)">
+
+        </div>
+       
+    </div>
+    <div class="row">
+        <button class="play-btn" onclick="playGame()">Play</button>
+    </div>
+    <div class="row">
+        <button class="play-btn" onclick="restartGame()" id="restart">Restar</button>
+    </div>
+</div>
+
+<script src="playgame.js"></script>
+</body>
+</html>
